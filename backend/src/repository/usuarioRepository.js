@@ -16,7 +16,7 @@ export async function inserirUsuario( usuarioCad ) {
 export async function validarUsuario( usuarioCad ) {
     const comando = `
         select
-            id_usuario  id,
+            id_usuario_cadastro  id,
             nm_usuario_cadastrado  nome
         from tb_usuario_cadastro
         where

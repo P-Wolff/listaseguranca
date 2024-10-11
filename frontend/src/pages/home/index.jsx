@@ -22,14 +22,14 @@ export default function Home() {
       "senha": senha
     }
 
-    const url = `http://localhost:3000/acesso/`
+    const url = `http://localhost:3000/logar/`
     let resp = await axios.post( url, usuario )
 
 
     if ( resp.data.erro != undefined ) {
       alert( resp.data.erro )
     } else {
-      localStorage.removeItem( 'USUARIO', resp.data.toke)
+      localStorage.setItem( 'USUARIO', resp.data.token)
       navegacao( '/consultar' )
     }
   }

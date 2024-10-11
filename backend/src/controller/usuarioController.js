@@ -26,7 +26,7 @@ endpoints.post( '/acesso/', async ( req, resp ) => {
 
 
 
-endpoints.post( '/acesso/', async ( req, resp ) => {
+endpoints.post( '/logar/', async ( req, resp ) => {
     try {
         let usuarioCad = req.body;
 
